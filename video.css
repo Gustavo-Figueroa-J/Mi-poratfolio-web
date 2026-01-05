@@ -22,3 +22,49 @@
     height:260px;
   }
 }
+/* ========== VIDEO EN TARJETA DE PROYECTO ========== */
+.project-card video.project-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* ✅ MANTIENE PROPORCIÓN SIN DEFORMAR */
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    background: #000;
+    display: block; /* ✅ IMPORTANTE */
+}
+
+/* Hover en el video */
+.project-card:hover video.project-img {
+    transform: scale(1.1);
+}
+
+/* Evitar que se deforme al reproducirse */
+.project-card video {
+    object-fit: cover !important; /* ✅ FORZAR */
+    aspect-ratio: 16 / 9; /* ✅ MANTENER PROPORCIÓN */
+}
+/* Contenedor con aspecto ratio fijo */
+.project-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 10; /* ✅ PROPORCIÓN FIJA */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #000;
+}
+
+/* Video rellena el contenedor sin deformarse */
+.project-card video.project-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ✅ CUBRE TODO SIN DEFORMAR */
+    object-position: center;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
