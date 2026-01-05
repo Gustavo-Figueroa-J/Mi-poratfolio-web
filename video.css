@@ -53,7 +53,7 @@
     box-shadow: var(--shadow);
     cursor: pointer;
     transition: all 0.3s ease;
-    background: #000;
+    background: #fffefe;
 }
 
 /* Video rellena el contenedor sin deformarse */
