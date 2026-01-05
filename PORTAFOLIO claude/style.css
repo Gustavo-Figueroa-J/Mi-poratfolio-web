@@ -1,0 +1,71 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2C5F2D;
+            --secondary: #1A4D2E;
+            --accent: #FF6B35;
+            --bg-light: #F8F9FA;
+            --text-dark: #2C3E50;
+            --white: #FFFFFF;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+       /* ========== TIPOGRAFÍA ELEGANTE Y PAREJA ========== */
+
+/* Mejorar renderizado de fuentes */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+}
+
+/* Títulos perfectamente alineados */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5em;
+}
+
+/* Párrafos parejos */
+p {
+    line-height: 1.7;
+    margin-bottom: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+}
+
+/* Listas alineadas */
+ul, ol {
+    line-height: 1.8;
+    margin-left: 1.5em;
+}
+
+/* Enlaces consistentes */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Evitar texto huérfano y viudo */
+p, li {
+    orphans: 3;
+    widows: 3;
+}
