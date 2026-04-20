@@ -10,8 +10,8 @@
             --secondary: #1A4D2E;
             --accent: #FF6B35;
             --bg-light: #F8F9FA;
-            --text-dark: #2C3E50;
-            --white: #FFFFFF;
+            --text-dark: #777777;
+            --white: #F8F9FA;
             --shadow: 0 4px 6px rgba(0,0,0,0.1);
             --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
         }
